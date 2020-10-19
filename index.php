@@ -1,7 +1,9 @@
 <?php
-include __DIR__ . "data.php";
-include __DIR__ . "functions.php";
-include __DIR__ . "header.php";
+include __DIR__ . "/data.php";
+include __DIR__ . "/functions.php";
+include __DIR__ . "/header.php";
+
+
 
 ?>
     <h1>FAKE NEWS!</h1>
@@ -15,9 +17,14 @@ include __DIR__ . "header.php";
         and we are pretty sure it's all bogus. That said, enjoy a more intresting read!
     </p>
     <?php
-        include __DIR__ . "articles.php";
 
-        include __DIR__ . "upload.php";
+        include __DIR__ . "/articles.php";
+        
+        if($loggedIn === true){
 
-        include __DIR__ . "footer.php";
+            include __DIR__ . "/add-news.php";
+
+        }
+
+        include __DIR__ . "/footer.php";
     ?>

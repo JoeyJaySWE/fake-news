@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+
 function add_user(
     int $id,
     string $username,
@@ -27,8 +28,8 @@ function add_news(
     int $news_id, 
     string $title, 
     string $story, 
-    string $news_date, 
-    string $author
+    string $author,
+    string $news_date
     ): array{
 
     $news = [
@@ -36,14 +37,17 @@ function add_news(
             'id' => $news_id,
             'title' => $title,
             'story' => $story,
-            'date' => $news_date,
-            'author' => $author
+            'author' => $author,
+            'date' => $news_date
         ]
 
    ];
 
+   
+
             return $news;
         }
+
 
 
 ?>
