@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<form class="add_news" action="upload.php" method="POST">
+<form class="add_news" action="/updates/upload.php" method="POST">
     <h2>Add an article!</h2>
 
     <input type="text" name="news_title" placeholder="My news Title...">
@@ -11,3 +11,4 @@
     <input type="submit" name="submit">
 
 </form>
+<a href="/updates/sign-out.php">Sign out <?= $_SESSION['user'];?></a>

@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 
 
@@ -47,7 +46,28 @@ function add_news(
 
             return $news;
         }
+function db():PDO {
+    $dir = 'sqlite:/'. __DIR__ .'/fake-news-db.sqlite3';
+    $options = [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES   => false,
+    ];
+    try {
+        $pdo = new PDO($dir, '', '',  $options);
+    } catch (\PDOException $e) {
+        throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    }
 
+    return $pdo;
+}
+
+function signOut(){
+    $_SESSION = [];
+    session_destroy();
+    echo $_SESSION['user'];
+    header('location:'.__DIR__);
+}
 
 
 ?>

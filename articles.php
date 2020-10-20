@@ -1,12 +1,8 @@
 <?php
 
-try {
-    $pdo = new PDO($dir, '', '',  $options);
-} catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
-}
+db();
 
-$stmt = $pdo->query('SELECT * FROM posts');
+$stmt = db()->query('SELECT * FROM posts');
 while ($article = $stmt->fetch()):
 
    

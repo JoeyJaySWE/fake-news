@@ -17,21 +17,14 @@ $metaCardAlt = "Fake News, we lie straight to your face!";
 $favicon = "img/favicon.png";
 
 
-$loggedIn = false;
+
 
 $news = [];
 $date = date('m-d-Y');
-// -----------[ DB Values ]-----------------
 
-$dir = 'sqlite:/'. __DIR__ .'/fake-news-db.sqlite3';
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
-];
 
 //-----------------------------------------
 
 // debug values
-$loggedIn = true;
+// $loggedIn = true;
 $user = 'Test1';

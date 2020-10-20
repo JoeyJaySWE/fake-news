@@ -3,7 +3,7 @@ include __DIR__ . "/data.php";
 include __DIR__ . "/functions.php";
 include __DIR__ . "/header.php";
 
-
+session_start();
 
 ?>
     <h1>FAKE NEWS!</h1>
@@ -20,10 +20,13 @@ include __DIR__ . "/header.php";
 
         include __DIR__ . "/articles.php";
         
-        if($loggedIn === true){
+        if(isset($_SESSION['user'])){
 
             include __DIR__ . "/add-news.php";
 
+        }
+        else{
+            include __DIR__ . "/join.php";
         }
 
         include __DIR__ . "/footer.php";
