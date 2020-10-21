@@ -61,6 +61,43 @@ function db():PDO {
 
     return $pdo;
 }
+function handle_sql_errors($query, $error_message):string {
+    $message = "<pre>
+                    <br>
+                    $query
+                    <br>
+                </pre>
+                <br>
+                $error_message";
+    return $message;
+}
+
+function addLike(int $postId, int $postLikes){
+    echo $postId;
+    echo "<br>";
+    
+    $give_likes = db()->prepare('UPDATE posts 
+                SET likes = :likes 
+                WHERE id = :post_id ');
+    $give_likes->execute([
+                    'likes'=>++$postLikes,
+                    'post_id'=>--$postId
+                ]);
+                echo --$postLikes;
+                echo ++$postLikes;
+
+}
+function addDislike(int $postId, int $postDislikes){
+
+    $give_likes = db()->prepare('UPDATE posts 
+                SET dislikes = :dislikes 
+                WHERE id = :post_id ');
+    $give_likes->execute([
+                    'dislikes'=>++$postDislikes,
+                    'post_id'=>--$postId
+                ]);
+
+}
 
 function signOut(){
     $_SESSION = [];

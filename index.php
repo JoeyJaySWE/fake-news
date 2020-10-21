@@ -16,11 +16,12 @@ session_start();
         FAKE NEWS! The one site where you can read about fake news without needing to worry about if it's fact check, we already done that part,
         and we are pretty sure it's all bogus. That said, enjoy a more intresting read!
     </p>
+    <h2>News Feed</h2>
     <?php
 
         include __DIR__ . "/articles.php";
         
-        if(isset($_SESSION['user'])){
+        if(isset($_SESSION['user']) && $_SESSION['user'] != ''){
 
             include __DIR__ . "/add-news.php";
 
