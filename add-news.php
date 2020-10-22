@@ -6,7 +6,7 @@ if( $full_name['full_name'] != "Link"):
 
     ?>
     
-    <form class="add_news" action="/updates/user-check.php" method="POST">
+    <form class="add_news" action="/updates/upload.php" method="POST">
         <h2>Add an article!</h2>
     
         <input type="text" name="news_title" placeholder="My news Title...">
