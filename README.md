@@ -12,11 +12,11 @@ First code assignment from WU20 at YRGO
 </p>
 
 <nav>
-    <ul>
-        <li><a href="https://github.com/JoeyJaySWE/fake-news#what-do-i-get-to-work-with">1. What do I get to work with?</a></li>
-        <li><a href="https://github.com/JoeyJaySWE/fake-news#install-instructions">2. Install instructions</a></li>
-    <li><a href="https://github.com/JoeyJaySWE/fake-news#known-bugs">3. Known bugs</a></li>
-    </ul>
+    <ol>
+        <li><a href="https://github.com/JoeyJaySWE/fake-news#what-do-i-get-to-work-with">What do I get to work with?</a></li>
+        <li><a href="https://github.com/JoeyJaySWE/fake-news#install-instructions">Install instructions</a></li>
+    <li><a href="https://github.com/JoeyJaySWE/fake-news#known-bugs">Known bugs</a></li>
+    </ol>
 </nav>
 
 <h2>What can I do with this?</h2>
