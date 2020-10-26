@@ -11,6 +11,12 @@ First code assignment from WU20 at YRGO
             and we are pretty sure it's all bogus. That said, enjoy a more intresting read!
 </p>
 
+<nav>
+    <a href="https://github.com/JoeyJaySWE/fake-news#what-do-i-get-to-work-with">1. What do I get to work with?</a>
+    <a href="https://github.com/JoeyJaySWE/fake-news#install-instructions">Install instructions</a>
+    <a href="https://github.com/JoeyJaySWE/fake-news#known-bugs">Known bugs</a>
+</nav>
+
 <h2>What can I do with this?</h2>
 
 <p>
