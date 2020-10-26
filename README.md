@@ -11,10 +11,34 @@ First code assignment from WU20 at YRGO
             and we are pretty sure it's all bogus. That said, enjoy a more intresting read!
 </p>
 
+<h2>What can I do with this?</h2>
+
+<p>
+    You can use this site to build spin your own webs of lies online!
+    Or just be happy about the disclaimer and use it to print out fun and ridicules articles no one would belive.
+    <ul>
+        <li>You can read news</li>
+        <li>You can sign up and in order to write your own.</li>
+        <li>You can trust that your articles are safe in your database</li>
+        <li>You get your own password encrypted</li>
+        <li>You can like a news article</li>
+        <li>You can DISLIKE a news article</li>
+        <li>Aaaaaaand I guess that's it really. *shrug*</li>
+    </ul> 
+</p>
+
 <h2>What do I get to work with?</h2>
 
 In this repository you get a bunch of fun/scary files to look at (depending on coding experience).
 <ul>
+    <li> 
+        A <strong>Assets</strong> folder that contains some cool stuff like
+        <ul>
+            <li>A <strong>icons</strong> folder that contains allt he images used in the site</li>
+            <li><strong>articles.css</strong> - The design for all our articles (EXTRA! EXTRA! DEVELOPER LIES ABOUT "DESIGN")</li>
+            <li><strong>defaults.css</strong> - Sets the default behaviour for elements that doesn't contain class specific codes</li>
+            <li><strong>users.css</strong> - Here is all our designs for the user GUI (That's "GUI", Not "GEY")</li>
+    </li>
     <li>
         A <strong>settings</strong> folder with files for the modern life hacker
             <ul>
@@ -40,4 +64,15 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
     <li><strong>index.php</strong> - The main page that ties the net together (At least our site, maybe not the whole internet)</li>
     <li><strong>join.php</strong> - Here you find the sign up/sign in form, cause how else would we save know who wrote what?</li>
     <li><strong>README.md</strong> - READ ME! Wait... you currently are... nevermind!</li>
+    <li><strong>git.ignore<strong> - Feel free to ignore these..</li>
 </ul>
+
+
+<h2>Install instructions</h2>
+<p>
+    Clone the file down and that's it really. <br>
+    Buuuuut if you really wanna have more fun, try grabing the skin of a long dead cat,
+    climb the highest mmountain growing in the shade of a radio tower, 
+    gargle the some swamp water while citing from the holy bible in reverse,
+    THEN try the stuff on the first row (it's really all you need to do).
+</p>
