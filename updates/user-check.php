@@ -2,12 +2,25 @@
 require "../data.php";
 require "../functions.php";
 session_start();
+
+
 // sends user back to main site incase they try to manually enter the page
 if($_SERVER['REQUEST_METHOD'] != 'POST'){
     header('location: /index.php');
 }
 db();
 
+
+
+
+
+
+
+
+/* --------------  Checking if Full Name was sent -------------------------------*/
+
+// starts by checking if we got the full name request
+// if so it will add it to database
 if(isset($_POST['new_full_name'])){
 
    
@@ -21,11 +34,14 @@ if(isset($_POST['new_full_name'])){
                 'new_full_name'=> $_POST['new_full_name'],
                 'username'=>$_SESSION['user']]);
     }
+    // if adding fails, it will return a error message, and go to the anchor poitn of the error message
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
         header("location: /index.php#errors");
     }
     $success = $update_full_name->fetchAll();
+    
+    // if we succed but get no hits in the db
     if(sizeof($success) === 0){
         $_SESSION['error'] = "Couldn't find user in Database";
        
@@ -38,29 +54,56 @@ if(isset($_POST['new_full_name'])){
 
 
 
+
+
+
+
+
+/*---------- Checks if we pressed any of the like/dislike buttons -----------------*/
+
+
+// checks if we hit the like button of a post
 if(isset($_POST['post_likes'])){
-    
-    echo "id from articles: ".$_POST['post_id']. "<br>";
-    echo "likes from articles:".$_POST['post_likes']. "<br>";
+
     addLike((int)$_POST['post_id'], $_POST['post_likes']);
-    header("location: ../index.php#article=".$_POST['post_id']);}
+    header("location: /index.php#article=".$_POST['post_id']);
+}
+
+// checks if we hit the dislike button fo a post
 if(isset($_POST['dislike'])){
-    addDislike((int)$_POST['post_id'], (int)$_POST['post_dislikes']);
-    header("location: ../index.php#article=".$_POST['post_id']);
+    $post_id = $_POST['post_id']; 
+    addDislike($post_id, (int)$_POST['post_dislikes']);
+    header("location: /index.php#article=".$post_id."");
+    
+  
+
 }
 
 
 
-$tmpPassword=md5($_POST['password']).'j47dl1';
-$tmpPassword = strrev($tmpPassword);
-$tmpPassword = md5($tmpPassword);
-$tmpPassword = strrev($tmpPassword);
+
+
+
+
+
+
+
+
+/*------------ User Credential Checks ----------------------*/
+
+
+
+// encrypts our password through salted md5 + reverse
+$tmp_password=md5($_POST['password']).'j47dl1';
+$tmp_password = strrev($tmp_password);
+$tmp_password = md5($tmp_password);
+$tmp_password = strrev($tmp_password);
 $username = trim($_POST['username']);
 
 
 
 
-
+// tries to find our user
 try{
     $find_user = db()->prepare('SELECT username FROM users WHERE username = :username');
     $find_user->execute(['username'=> $username]);
@@ -71,7 +114,11 @@ catch(PDOException $e){
 }
 
 $row = $find_user->fetch(PDO::FETCH_ASSOC);
-//If match was found
+
+
+
+
+//If match was found check password
 if($row){
     try{
         $password_check = db()->prepare('SELECT * FROM users WHERE password = :password');
@@ -82,6 +129,11 @@ if($row){
         header("location: ../index.php#errors");
     }
     $row = $password_check->fetch(PDO::FETCH_ASSOC);
+
+
+
+
+    // if password matches, sign user in. Else print out error message
     if($row){
         session_start();
         $_SESSION['user'] = $username;
@@ -92,9 +144,16 @@ if($row){
     {
         $_SESSION['error'] = "Password missmatch!";
         echo $_SESSION['error'];
-        header('location ../index.php#errors');
+        header('location: ../index.php#errors');
     }
-} else{
+} 
+
+
+
+
+// if user wasn't found, try adding it using the the enter username and password
+
+else{
 
 
                                 
@@ -119,3 +178,5 @@ if($row){
     }
 
 }
+
+/*-----------------------------------------------------------------------------------*/

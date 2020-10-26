@@ -2,51 +2,10 @@
 declare(strict_types=1);
 
 
-function add_user(
-    int $id,
-    string $username,
-    string $password,
-    string $name,
-    string $date):array{
-
-    $users = [
-        [
-            'id' => $id,
-            'username' => $username,
-            'password' => $password,
-            'full_name' => $name,
-            'date_joined' => $date
-        ]
-    ];
-
-    return $users;
-}
-
-
-function add_news(
-    int $news_id, 
-    string $title, 
-    string $story, 
-    string $author,
-    string $news_date
-    ): array{
-
-    $news = [
-        [
-            'id' => $news_id,
-            'title' => $title,
-            'story' => $story,
-            'author' => $author,
-            'date' => $news_date
-        ]
-
-   ];
-
-   
-
-            return $news;
-        }
+// makes our database connection into an esier managebale function
 function db():PDO {
+
+    // path to our db file
     $dir = 'sqlite:/'. __DIR__ .'/fake-news-db.sqlite3';
     $options = [
         PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
@@ -54,13 +13,15 @@ function db():PDO {
         PDO::ATTR_EMULATE_PREPARES   => false,
     ];
     try {
-        $pdo = new PDO($dir, '', '',  $options);
+        $pdo = new PDO($dir, '', '',  $options); //tries to connect to our databse using $path, $username, $passowrd, $options 
     } catch (\PDOException $e) {
-        throw new \PDOException($e->getMessage(), (int)$e->getCode());
+        throw new \PDOException($e->getMessage(), (int)$e->getCode()); //sends out an error message if it fails to connect.
     }
 
     return $pdo;
 }
+
+// gives us our error message with our query and erro code
 function handle_sql_errors($query, $error_message):string {
     $message = "<pre>
                     <br>
@@ -72,6 +33,7 @@ function handle_sql_errors($query, $error_message):string {
     return $message;
 }
 
+// adds like to our posts
 function addLike(int $postId, int $postLikes){
     echo $postId;
     echo "<br>";
@@ -84,10 +46,11 @@ function addLike(int $postId, int $postLikes){
                     'likes'=>++$postLikes,
                     'post_id'=>$postId
                 ]);
-                echo --$postLikes;
-                echo ++$postLikes;
+
       
 }
+
+// Adds dislikes to our posts (cause we like equality)
 function addDislike(int $postId, int $postDislikes){
 
     $give_likes = db()->prepare('UPDATE posts 
@@ -100,6 +63,8 @@ function addDislike(int $postId, int $postDislikes){
 
 }
 
+// signs us out by cleaning the $_SESSION array
+//and destroys our session then redirect us back to main page
 function signOut(){
     $_SESSION = [];
     session_destroy();

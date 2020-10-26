@@ -1,7 +1,8 @@
 <?php
-
+// starts database connection
 db();
 
+// fetches all articles from db and list them in order of latest->oldest
 $stmt = db()->query('SELECT * FROM posts
                     INNER JOIN users
                     ON posts.author = users.username
@@ -9,7 +10,7 @@ $stmt = db()->query('SELECT * FROM posts
 while ($article = $stmt->fetch()):
 ?>
 
-
+<!-- adds a anchor link to each article (W.I.P) -->
 <article id="article=<?= $article['post_id'];?>">
     <h3><?= $article['title'];?></h3>
     <p>
@@ -19,6 +20,7 @@ while ($article = $stmt->fetch()):
     <hr/>
     
     <footer>
+        <!-- adds our like and dislike buttons -->
         <section class="votes">
             <form action="/updates/user-check.php" method="POST">
                 <input type="hidden" name="post_id" value="<?= $article['post_id'];?>">
@@ -33,7 +35,7 @@ while ($article = $stmt->fetch()):
         </section>
 
 
-
+        <!-- adds our Author and publush date -->
         <em class="athur">
             Ahtur: 
             <strong><?=$article['full_name'];?></strong>

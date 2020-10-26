@@ -15,7 +15,7 @@
 
 if(isset($_SESSION['error'])):
     ?>
-
+    <!-- in case of errors, it's printed below -->
     <strong id="errors"><?= $_SESSION['error'];?></strong>
 
     <?php
