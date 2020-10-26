@@ -4,7 +4,7 @@ require "../functions.php";
 session_start();
 // sends user back to main site incase they try to manually enter the page
 if($_SERVER['REQUEST_METHOD'] != 'POST'){
-    header('location:'.__DIR__);
+    header('location: /index.php');
 }
 db();
 
@@ -23,16 +23,16 @@ if(isset($_POST['new_full_name'])){
     }
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location:".__DIR__);
+        header("location: /index.php#errors");
     }
     $success = $update_full_name->fetchAll();
     if(sizeof($success) === 0){
         $_SESSION['error'] = "Couldn't find user in Database";
        
-        header("location: ".__DIR__);
+        header("location: /index.php#errors");
     }
     $_SESSION['error'] = '';
-    header("location: ".__DIR__);
+    header("location: /index.php");
 }
 
 
@@ -43,12 +43,10 @@ if(isset($_POST['post_likes'])){
     echo "id from articles: ".$_POST['post_id']. "<br>";
     echo "likes from articles:".$_POST['post_likes']. "<br>";
     addLike((int)$_POST['post_id'], $_POST['post_likes']);
-    // die(var_dump($_SESSION['user']));
-    header("location: ../index.php");
-}
+    header("location: ../index.php#article=".$_POST['post_id']);}
 if(isset($_POST['dislike'])){
     addDislike((int)$_POST['post_id'], (int)$_POST['post_dislikes']);
-    header("location: ../index.php");
+    header("location: ../index.php#article=".$_POST['post_id']);
 }
 
 
@@ -69,7 +67,7 @@ try{
 }
 catch(PDOException $e){
     $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-    header("location:".__DIR__);
+    header("location: /index.php#errors");
 }
 
 $row = $find_user->fetch(PDO::FETCH_ASSOC);
@@ -81,7 +79,7 @@ if($row){
     }
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location: ../index.php");
+        header("location: ../index.php#errors");
     }
     $row = $password_check->fetch(PDO::FETCH_ASSOC);
     if($row){
@@ -94,7 +92,7 @@ if($row){
     {
         $_SESSION['error'] = "Password missmatch!";
         echo $_SESSION['error'];
-        header('Refresh:5; ../index.php');
+        header('location ../index.php#errors');
     }
 } else{
 
@@ -117,7 +115,7 @@ if($row){
     }
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location: /index.php");
+        header("location: /index.php#errors");
     }
 
 }

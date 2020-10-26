@@ -18,7 +18,10 @@ session_start();
         <?php
 
 include __DIR__ . "/articles.php";
+?>
+        <section class="users">
 
+            <?php
 if(isset($_SESSION['user']) && $_SESSION['user'] != ''){
     
     include __DIR__ . "/add-news.php";
@@ -27,7 +30,6 @@ if(isset($_SESSION['user']) && $_SESSION['user'] != ''){
 else{
     include __DIR__ . "/join.php";
 }
-
 
 include __DIR__ . "/footer.php";
 ?>

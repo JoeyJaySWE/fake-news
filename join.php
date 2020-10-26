@@ -16,7 +16,7 @@
 if(isset($_SESSION['error'])):
     ?>
 
-    <strong><?= $_SESSION['error'];?></strong>
+    <strong id="errors"><?= $_SESSION['error'];?></strong>
 
     <?php
 endif;

@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #efefef;
     font-size:16px;
@@ -51,4 +54,25 @@ article section.votes button{
     height:41px;
     width:105px;
 
+}
+
+section.users{
+    display: flex;
+    flex-direction: column;
+    border:2px solid grey;
+    border-radius: 10px;
+    margin: 30px auto 0px auto;
+    width:80%;
+    padding:0px 20px 20px 20px;
+}
+
+section.users h2{
+    margin: 20px auto 10px auto;
+}
+section.users form{
+    margin: 10px auto 10px auto;
+    max-width: 175px;
+}
+section.users #errors{
+    margin: auto;
 }
