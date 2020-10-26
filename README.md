@@ -64,7 +64,7 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
     <li><strong>index.php</strong> - The main page that ties the net together (At least our site, maybe not the whole internet)</li>
     <li><strong>join.php</strong> - Here you find the sign up/sign in form, cause how else would we save know who wrote what?</li>
     <li><strong>README.md</strong> - READ ME! Wait... you currently are... nevermind!</li>
-    <li><strong>git.ignore<strong> - Feel free to ignore these..</li>
+    <li><strong>git.ignore</strong> - Feel free to ignore these..</li>
 </ul>
 
 
