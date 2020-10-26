@@ -16,18 +16,18 @@ First code assignment from WU20 at YRGO
 In this repository you get a bunch of fun/scary files to look at (depending on coding experience).
 <ul>
     <li>
-        A settings folder with files for the modern life hacker
+        A <strong>settings</strong> folder with files for the modern life hacker
             <ul>
-                <li>a LICENSE-file. - Makes sence to read (get it? SENCE?)</li>
-                <li>settings.json - You know, so you know, how I know, that you see, what I see.</li>
+                <li>a <strong>LICENSE-file</strong>. - Makes sence to read (get it? SENCE?)</li>
+                <li><strong>settings.json</strong> - You know, so you know, how I know, that you see, what I see.</li>
             </ul>
     </li>
     <li>
-        A updates folder (bonus files that wasn't part of assignment (SPOILERS!))
+        A <strong>updates</strong> folder (bonus files that wasn't part of assignment (SPOILERS!))
         <ul>
-            <li>sign-out.php - the page that handles signing out (daaaaa...)</li>
-            <li>upload.php - the page that handles the news upload (probly should have kept this as a funciton...)</li>
-            <li>user-check.php - HERE'S where a lot of stuff happening surounding the user (like a hub page to call functions from)</li>
+            <li><strong>sign-out.php</strong> - the page that handles signing out (daaaaa...)</li>
+            <li><strong>upload.php</strong> - the page that handles the news upload (probly should have kept this as a funciton...)</li>
+            <li><strong>user-check.php</strong> - HERE'S where a lot of stuff happening surounding the user (like a hub page to call functions from)</li>
         </ul>
     </li>
     <li><strong>add-news.php</strong> - SPOILER to add a news article to the database (see further down)</li>
