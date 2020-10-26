@@ -13,6 +13,7 @@ First code assignment from WU20 at YRGO
 
 <nav>
     <ol>
+        <li><a href="https://github.com/JoeyJaySWE/fake-news#what-can-i-do-with-this">What can I do with this?</a></li>
         <li><a href="https://github.com/JoeyJaySWE/fake-news#what-do-i-get-to-work-with">What do I get to work with?</a></li>
         <li><a href="https://github.com/JoeyJaySWE/fake-news#install-instructions">Install instructions</a></li>
     <li><a href="https://github.com/JoeyJaySWE/fake-news#known-bugs">Known bugs</a></li>
