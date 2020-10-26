@@ -27,4 +27,4 @@ $date = date('m-d-Y');
 
 // debug values
 // $loggedIn = true;
-$user = 'Test1';
+// $user = 'Test1';

@@ -16,6 +16,7 @@ if( $full_name['full_name'] != "Link"):
         <input type="submit" name="submit">
     
     </form>
+    
     <a href="/updates/sign-out.php">Sign out <?= $_SESSION['user'];?></a>
 <?php
     else:
@@ -30,7 +31,7 @@ if( $full_name['full_name'] != "Link"):
         <input type="submit" value="Continue">
     </form>
     <a href="/updates/sign-out.php">Sign out <?= $_SESSION['user'];?></a>
-
+        
 <?php
 
     endif;

@@ -38,15 +38,17 @@ if(isset($_POST['new_full_name'])){
 
 
 
-if(isset($_POST['like'])){
+if(isset($_POST['post_likes'])){
+    
     echo "id from articles: ".$_POST['post_id']. "<br>";
     echo "likes from articles:".$_POST['post_likes']. "<br>";
-    addLike((int)$_POST['post_id'], (int)$_POST['post_likes']);
-    header("location:".__DIR__);
+    addLike((int)$_POST['post_id'], $_POST['post_likes']);
+    // die(var_dump($_SESSION['user']));
+    header("location: ../index.php");
 }
 if(isset($_POST['dislike'])){
     addDislike((int)$_POST['post_id'], (int)$_POST['post_dislikes']);
-    header("location:".__DIR__);
+    header("location: ../index.php");
 }
 
 
@@ -79,20 +81,20 @@ if($row){
     }
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location:".__DIR__);
+        header("location: ../index.php");
     }
     $row = $password_check->fetch(PDO::FETCH_ASSOC);
     if($row){
         session_start();
         $_SESSION['user'] = $username;
         $_SESSION['error'] = '';
-        header("location:".__DIR__);
+        header('location: /../');
     }
     else
     {
         $_SESSION['error'] = "Password missmatch!";
         echo $_SESSION['error'];
-        header('Refresh:5; /../');
+        header('Refresh:5; ../index.php');
     }
 } else{
 
@@ -115,10 +117,7 @@ if($row){
     }
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location:".__DIR__);
+        header("location: /index.php");
     }
 
-    session_start();
-    $_SESSION['user'] = $username;
-    header("location:".__DIR__);
 }

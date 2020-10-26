@@ -14,6 +14,9 @@
     <meta name="twitter:image" content="<?php echo $metaImg;?>"/>
     <meta name="twitter:card" content="<?php echo $metaCard;?>"/>
     <meta name="twitter:image:alt" content="<?php echo $metImgAlt;?>">
+    <link rel="stylesheet" href="/Assets/style.css">
+    <link rel='icon' type='image/png' href='/Assets/icons/fake_news_icon.svg'>
     <title><?php echo $title;?></title>
 </head>
 <body>
+    <div class="wrapper">

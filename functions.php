@@ -75,26 +75,27 @@ function handle_sql_errors($query, $error_message):string {
 function addLike(int $postId, int $postLikes){
     echo $postId;
     echo "<br>";
-    
+   
+
     $give_likes = db()->prepare('UPDATE posts 
                 SET likes = :likes 
-                WHERE id = :post_id ');
+                WHERE post_id = :post_id ');
     $give_likes->execute([
                     'likes'=>++$postLikes,
-                    'post_id'=>--$postId
+                    'post_id'=>$postId
                 ]);
                 echo --$postLikes;
                 echo ++$postLikes;
-
+      
 }
 function addDislike(int $postId, int $postDislikes){
 
     $give_likes = db()->prepare('UPDATE posts 
                 SET dislikes = :dislikes 
-                WHERE id = :post_id ');
+                WHERE post_id = :post_id ');
     $give_likes->execute([
                     'dislikes'=>++$postDislikes,
-                    'post_id'=>--$postId
+                    'post_id'=>$postId
                 ]);
 
 }
@@ -103,7 +104,7 @@ function signOut(){
     $_SESSION = [];
     session_destroy();
     echo $_SESSION['user'];
-    header('location:'.__DIR__);
+    header('location: ../index.php');
 }
 
 
