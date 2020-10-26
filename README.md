@@ -14,8 +14,8 @@ First code assignment from WU20 at YRGO
 <nav>
     <ul>
         <li><a href="https://github.com/JoeyJaySWE/fake-news#what-do-i-get-to-work-with">1. What do I get to work with?</a></li>
-        <li><a href="https://github.com/JoeyJaySWE/fake-news#install-instructions">2Install instructions</a></li>
-    <li><a href="https://github.com/JoeyJaySWE/fake-news#known-bugs">3Known bugs</a></li>
+        <li><a href="https://github.com/JoeyJaySWE/fake-news#install-instructions">2. Install instructions</a></li>
+    <li><a href="https://github.com/JoeyJaySWE/fake-news#known-bugs">3. Known bugs</a></li>
     </ul>
 </nav>
 
