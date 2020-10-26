@@ -88,5 +88,5 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 He he he..., WHERE TO BEGIN?!
 <br>
 Actually it ain't that bad. So far there is only one bug that seams to be happening about 50% of the time.
-If you press a like or disslike button, you may need to sign back in to the sight. 
+If you press a like or disslike button, you may need to sign back in to the site. 
 Nothing wrong with the code as far as I can see though, anyone spots the issue or a sulotion, plese fork and send me a merge request!
