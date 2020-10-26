@@ -76,3 +76,11 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
     gargle the some swamp water while citing from the holy bible in reverse,
     THEN try the stuff on the first row (it's really all you need to do).
 </p>
+
+<h2>Known bugs</h2>
+
+He he he..., WHERE TO BEGIN?!
+<br>
+Actually it ain't that bad. So far there is only one bug that seams to be happening about 50% of the time.
+If you press a like or disslike button, you may need to sign back in to the sight. 
+Nothing wrong with the code as far as I can see though, anyone spots the issue or a sulotion, plese fork and send me a merge request!
