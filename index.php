@@ -22,7 +22,7 @@ session_start();
         <?php
 
         if(isset($_SESSION['errors'])){
-            ?><strong><?= $_SESSION['errors'];?></strong>
+            ?><strong id="erorrs"><?= $_SESSION['errors'];?></strong>
             <?php
         }
 

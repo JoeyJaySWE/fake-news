@@ -63,14 +63,6 @@ function addDislike(int $postId, int $postDislikes){
 
 }
 
-// signs us out by cleaning the $_SESSION array
-//and destroys our session then redirect us back to main page
-function signOut(){
-    $_SESSION = [];
-    session_destroy();
-    echo $_SESSION['user'];
-    header('location: ../index.php');
-}
 
 
 ?>
