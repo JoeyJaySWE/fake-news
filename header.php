@@ -18,7 +18,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/Assets/defaults.css">
     <link rel="stylesheet" href="/Assets/articles.css">
-    <link rel="stylesheet" href="/Assets/users.css">
     <!-- Favicon -->
     <link rel='icon' type='image/png' href='/Assets/icons/fake_news_icon.svg'>
     <title><?php echo $title;?></title>

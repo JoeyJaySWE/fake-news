@@ -4,7 +4,7 @@ include __DIR__ . "/data.php";
 include __DIR__ . "/functions.php";
 include __DIR__ . "/header.php";
 
-
+session_start();
 
 
 ?> 
@@ -21,6 +21,10 @@ include __DIR__ . "/header.php";
         <h2>News Feed</h2>
         <?php
 
+        if(isset($_SESSION['errors'])){
+            ?><strong><?= $_SESSION['errors'];?></strong>
+            <?php
+        }
 
         // loads in articles
         include __DIR__ . "/articles.php";

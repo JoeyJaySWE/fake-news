@@ -32,4 +32,45 @@ function handle_sql_errors($query, $error_message):string {
                 $error_message";
     return $message;
 }
+
+// adds like to our posts
+function addLike(int $postId, int $postLikes){
+    echo $postId;
+    echo "<br>";
+   
+
+    $give_likes = db()->prepare('UPDATE posts 
+                SET likes = :likes 
+                WHERE post_id = :post_id ');
+    $give_likes->execute([
+                    'likes'=>++$postLikes,
+                    'post_id'=>$postId
+                ]);
+
+      
+}
+
+// Adds dislikes to our posts (cause we like equality)
+function addDislike(int $postId, int $postDislikes){
+
+    $give_likes = db()->prepare('UPDATE posts 
+                SET dislikes = :dislikes 
+                WHERE post_id = :post_id ');
+    $give_likes->execute([
+                    'dislikes'=>++$postDislikes,
+                    'post_id'=>$postId
+                ]);
+
+}
+
+// signs us out by cleaning the $_SESSION array
+//and destroys our session then redirect us back to main page
+function signOut(){
+    $_SESSION = [];
+    session_destroy();
+    echo $_SESSION['user'];
+    header('location: ../index.php');
+}
+
+
 ?>

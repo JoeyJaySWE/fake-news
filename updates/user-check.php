@@ -37,7 +37,7 @@ if(isset($_POST['new_full_name'])){
     // if adding fails, it will return a error message, and go to the anchor poitn of the error message
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location: /index.php#errors");
+        header("location: /index.php#errors5");
     }
     $success = $update_full_name->fetchAll();
     
@@ -45,7 +45,7 @@ if(isset($_POST['new_full_name'])){
     if(sizeof($success) === 0){
         $_SESSION['error'] = "Couldn't find user in Database";
        
-        header("location: /index.php#errors");
+        header("location: /index.php#errors2");
     }
     $_SESSION['error'] = '';
     header("location: /index.php");
@@ -63,7 +63,7 @@ if(isset($_POST['new_full_name'])){
 
 
 // checks if we hit the like button of a post
-if(isset($_POST['post_likes'])){
+if(isset($_POST['like'])){
 
     addLike((int)$_POST['post_id'], $_POST['post_likes']);
     header("location: /index.php#article=".$_POST['post_id']);
@@ -78,6 +78,7 @@ if(isset($_POST['dislike'])){
   
 
 }
+else{
 
 
 
@@ -110,7 +111,7 @@ try{
 }
 catch(PDOException $e){
     $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-    header("location: /index.php#errors");
+    header("location: /index.php#errors1");
 }
 
 $row = $find_user->fetch(PDO::FETCH_ASSOC);
@@ -126,7 +127,7 @@ if($row){
     }
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location: ../index.php#errors");
+        header("location: ../index.php#errors2");
     }
     $row = $password_check->fetch(PDO::FETCH_ASSOC);
 
@@ -144,7 +145,7 @@ if($row){
     {
         $_SESSION['error'] = "Password missmatch!";
         echo $_SESSION['error'];
-        header('location: ../index.php#errors');
+        header('location: ../index.php#errors3');
     }
 } 
 
@@ -174,9 +175,9 @@ else{
     }
     catch(PDOException $e){
         $_SESSION['error'] = handle_sql_errors($update_full_name, $e->getMessage());
-        header("location: /index.php#errors");
+        header("location: /index.php#errors4");
     }
 
 }
-
+}
 /*-----------------------------------------------------------------------------------*/
