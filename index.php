@@ -5,11 +5,8 @@ include __DIR__ . "/functions.php";
 include __DIR__ . "/header.php";
 
 
-// starts session for users
-session_start();
 
-// debug
-var_dump($_SESSION['user']);
+
 ?> 
         <!-- Sets the logo as h1 with the alt tag set to FAKE NEWS -->
         <h1><img src="/Assets/icons/fake_news_medium.svg" alt="FAKE NEWS!"></h1>
@@ -27,23 +24,7 @@ var_dump($_SESSION['user']);
 
         // loads in articles
         include __DIR__ . "/articles.php";
-        ?>
-
-
-        <!-- Sets up the user section -->
-        <section class="users">
-
-        <?php
-
-        // Checks if user is signed in, then it will load in the add news fucntions, if not it shows the sign in function
-        if(isset($_SESSION['user']) && $_SESSION['user'] != ''){
-            
-            include __DIR__ . "/add-news.php";
-            
-        }
-        else{
-            include __DIR__ . "/join.php";
-        }
+        
 
         // adds our footer
         include __DIR__ . "/footer.php";

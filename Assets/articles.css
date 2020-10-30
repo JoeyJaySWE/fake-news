@@ -28,19 +28,7 @@ article footer{
     justify-content: space-between;
     align-items: center;
 }
-article section.votes{
+article section.likes{
     display:flex;
 }
-article section.votes button{
-    display: flex;
-    align-items: center;
-    height:41px;
-    width:105px;
-    border-radius: 10px;
-
-}
 /* adds a reversed shadow for our buttons on hover */
-article section.votes button:hover{
-    border: 0px;
-    box-shadow: inset 2px 1px 4px 0px #000000b8;
-}
