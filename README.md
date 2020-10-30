@@ -75,7 +75,7 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 
 <h2>Known bugs</h2>
 
-None that I know off, ass of <time>30-10-2020, 18:15</time>
+None that I know off, as of <time>30-10-2020, 18:15</time>
 <p>
 
 <em>Psssst.... wanna see something more useful in W.I.P?<br> check this one out! &#128540; <a href="https://github.com/JoeyJaySWE/Fake-News-Extra">FAKE NEWS EXTRA!</a></em>
