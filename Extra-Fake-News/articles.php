@@ -22,12 +22,12 @@ while ($article = $stmt->fetch()):
     <footer>
         <!-- adds our like and dislike buttons -->
         <section class="votes">
-            <form action="/updates/vote-check.php" method="POST">
+            <form action="/updates/user-check.php" method="POST">
                 <input type="hidden" name="post_id" value="<?= $article['post_id'];?>">
                 <input type="hidden" name="post_likes" value="<?= $article['likes'];?>">
                 <button type="submit" name="like" class="likes"><img style="height:32px;width:32px;" src="/Assets/icons/like.svg" alt="like"><?= $article['likes'];?> likes</button>
             </form>
-            <form action="/updates/vote-check.php" method="POST">
+            <form action="/updates/user-check.php" method="POST">
                 <input type="hidden" name="post_id" value="<?= $article['post_id'];?>">
                 <input type="hidden" name="post_dislikes" value="<?= $article['dislikes'];?>">
                 <button type="submit" name="dislike" class="likes"><img style="height:32px;width:32px;" src="/Assets/icons/dislike.svg" alt="like"><?= $article['dislikes'];?> dislikes</button>
