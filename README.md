@@ -23,13 +23,10 @@ First code assignment from WU20 at YRGO
 <h2>What can I do with this?</h2>
 
 <p>
-    You can use this site to build spin your own webs of lies online!
-    Or just be happy about the disclaimer and use it to print out fun and ridicules articles no one would belive.
+    You can get a nice little reading done in case you want something that is more entertaining than true.
     <ul>
         <li>You can read news</li>
-        <li>You can sign up and in order to write your own.</li>
-        <li>You can trust that your articles are safe in your database</li>
-        <li>You get your own password encrypted</li>
+        <li>You can get a shareble link to the news after placing your vote and share to your friends</li>
         <li>You can like a news article</li>
         <li>You can DISLIKE a news article</li>
         <li>Aaaaaaand I guess that's it really. *shrug*</li>
@@ -46,34 +43,24 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
             <li>A <strong>icons</strong> folder that contains allt he images used in the site</li>
             <li><strong>articles.css</strong> - The design for all our articles (EXTRA! EXTRA! DEVELOPER LIES ABOUT "DESIGN")</li>
             <li><strong>defaults.css</strong> - Sets the default behaviour for elements that doesn't contain class specific codes</li>
-            <li><strong>users.css</strong> - Here is all our designs for the user GUI (That's "GUI", Not "GEY")</li>
-    </li>
-    <li>
-        A <strong>settings</strong> folder with files for the modern life hacker
-            <ul>
-                <li>a <strong>LICENSE-file</strong>. - Makes sence to read (get it? SENCE?)</li>
-                <li><strong>settings.json</strong> - You know, so you know, how I know, that you see, what I see.</li>
-            </ul>
     </li>
     <li>
         A <strong>updates</strong> folder (bonus files that wasn't part of assignment (SPOILERS!))
         <ul>
-            <li><strong>sign-out.php</strong> - the page that handles signing out (daaaaa...)</li>
-            <li><strong>upload.php</strong> - the page that handles the news upload (probly should have kept this as a funciton...)</li>
-            <li><strong>user-check.php</strong> - HERE'S where a lot of stuff happening surounding the user (like a hub page to call functions from)</li>
+            <li><strong>vote-check.php</strong> - Here's where we check if you have liked or disliked a article</li>
         </ul>
     </li>
-    <li><strong>add-news.php</strong> - SPOILER to add a news article to the database (see further down)</li>
+    <li>a <strong>LICENSE-file</strong>. - Makes sence to read (get it? SENCE?)</li>
+    <li><strong>.editorconfig</strong> - You know, so you know, how I know, that you see, what I see.</li>
     <li><strong>articles.php</strong> - Fetches and lists all our articles fromt he database</li>
     <li><strong>data.php</strong> - for.... data (sorry but some of these shoudl be self explenatory)</li>
-    <li><strong>fake-news-db.sqlite3</strong> - Tis is the wholy grail, the database. Here we save all our hard work (and spend most of our time cursing it's very being).</li>
+    <li><strong>fake-news-db.sqlite3</strong> - Tis is the wholy grail, the database. Here we fetch all our hard work (and spend most of our time cursing it's very being).</li>
     <li><strong>footer.php</strong> - No, it's the bottom of the html tree, not a resturant (sorry guys...)</li>
     <li><strong>functions.php</strong> - List all the juicy functions of the site. (All out of apples though...)</li>
     <li><strong>header.php</strong> - Use your head! At least that's what the HTML is using this file for.</li>
     <li><strong>index.php</strong> - The main page that ties the net together (At least our site, maybe not the whole internet)</li>
-    <li><strong>join.php</strong> - Here you find the sign up/sign in form, cause how else would we save know who wrote what?</li>
     <li><strong>README.md</strong> - READ ME! Wait... you currently are... nevermind!</li>
-    <li><strong>git.ignore</strong> - Feel free to ignore these..</li>
+    <li><strong>.gitignore</strong> - Feel free to ignore these..</li>
 </ul>
 
 
@@ -88,11 +75,10 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 
 <h2>Known bugs</h2>
 
-He he he..., WHERE TO BEGIN?!
-<br>
-Actually it ain't that bad. So far there is only one bug that seams to be happening about 50% of the time.
-If you press a like or disslike button, you may need to sign back in to the site. 
-Nothing wrong with the code as far as I can see though, anyone spots the issue or a sulotion, plese fork and send me a merge request!
+None that I know off, ass of <time>30-10-2020, 18:15</time>
 <p>
+
+<em>Psssst.... wanna see something more useful in W.I.P?<br> check this one out! &#128540; <a href="https://github.com/JoeyJaySWE/Fake-News-Extra">FAKE NEWS EXTRA!</a></em>
+
 <img src="http://nya.jjd.joeyjaydigital.com/wp-content/uploads/2018/09/Joey-Jay-digital.svg">
 </p>
