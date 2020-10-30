@@ -73,6 +73,22 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
     THEN try the stuff on the first row (it's really all you need to do).
 </p>
 
+<h2>Code Review</h2>
+
+<li>- I’m guessing you will add more articles later but here’s a reminder anyway In total you should have 5 different authors all with at least 2 different news feed items each.</li>
+
+<li>- Nice SVG logo, I like it a lot, I can smell the fakeness from the green color. </li>
+
+<li>- The site has a nice and clean design. Maybe the title font of the articles can be the same font as in the logo to keep the recognition factor, tiny picky stuff</li>
+
+<li>- Mobile mode looks clean and I tried it on different browsers. On Firefox it seems like the “ahtur” text goes and sticks next to the dislike button, doesn’t seem to do that on the other browsers. </li>
+
+<li>- Notice: Undefined index: user in fake-news/index.php on line 12 NULL // whatever that means xD</li>
+
+<li>- I like the green sign-in button, makes it feel all gooey and icky and fake, I like the consistency.</li>
+
+<em> Provided by Gilda Ahmadniaye <time>30-10-2020, 15:56</time></em>
+
 <h2>Known bugs</h2>
 
 None that I know off, as of <time>30-10-2020, 18:15</time>
