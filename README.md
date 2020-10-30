@@ -53,8 +53,8 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
     <li>a <strong>LICENSE-file</strong>. - Makes sence to read (get it? SENCE?)</li>
     <li><strong>.editorconfig</strong> - You know, so you know, how I know, that you see, what I see.</li>
     <li><strong>articles.php</strong> - Fetches and lists all our articles fromt he database</li>
-    <li><strong>data.php</strong> - for.... data (sorry but some of these shoudl be self explenatory)</li>
-    <li><strong>fake-news-db.sqlite3</strong> - Tis is the wholy grail, the database. Here we fetch all our hard work (and spend most of our time cursing it's very being).</li>
+    <li><strong>data.php</strong> - for.... data (sorry but some of these should be self explenatory)</li>
+    <li><strong>fake-news-db.sqlite3</strong> - Tis be the wholy grail, the database. Here we fetch all our hard work (and spend most of our time cursing it's very being).</li>
     <li><strong>footer.php</strong> - No, it's the bottom of the html tree, not a resturant (sorry guys...)</li>
     <li><strong>functions.php</strong> - List all the juicy functions of the site. (All out of apples though...)</li>
     <li><strong>header.php</strong> - Use your head! At least that's what the HTML is using this file for.</li>
