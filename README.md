@@ -74,7 +74,7 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
     THEN try the stuff on the first row (it's really all you need to do).
 </p>
 
-<h2>Code Review</h2>
+<h2>Code Review and Testers</h2>
 
 <li>- I’m guessing you will add more articles later but here’s a reminder anyway In total you should have 5 different authors all with at least 2 different news feed items each.</li>
 
@@ -88,12 +88,30 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 
 <li>- I like the green sign-in button, makes it feel all gooey and icky and fake, I like the consistency.</li>
 
-<em> Provided by Gilda Ahmadniaye <time>30-10-2020, 15:56</time></em>
+<em> Provided by <a href="">Gilda Ahmadniaye</a> <time>30-10-2020, 15:56</time></em>
+
+<strong>Testers</strong>
+<ul>
+    <li>
+        <a href="https://github.com/amandafager">Amanda Fager</a> 
+    </li>
+    <li>
+        <a href="https://github.com/JoakimSjogren">Joakim Sjögren</a> 
+    </li>
+    <li>
+        <a href="https://github.com/nausea87">Erik White</a>
+    </li>
+    <li>
+        <a href="https://github.com/pnpjss">Lucas Nordeborg</a>
+    </li>
+</ul>
 
 <h2>Known bugs</h2>
 
 None that I know off, as of <time>30-10-2020, 18:15</time>
 <p>
+
+
 
 <em>Psssst.... wanna see something more useful in W.I.P?<br> check this one out! &#128540; <a href="https://github.com/JoeyJaySWE/Fake-News-Extra">FAKE NEWS EXTRA!</a></em>
 
