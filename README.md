@@ -90,7 +90,7 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 
 <li>- I like the green sign-in button, makes it feel all gooey and icky and fake, I like the consistency.</li>
 
-<em> Provided by <a href="">Gilda Ahmadniaye</a> <time>30-10-2020, 15:56</time></em>
+<em> Provided by <a href="https://github.com/gillybeans/">Gilda Ahmadniaye</a> <time>30-10-2020, 15:56</time></em>
 
 <strong>Testers</strong>
 <ul>
