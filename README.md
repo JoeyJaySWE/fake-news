@@ -72,6 +72,8 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
     climb the highest mmountain growing in the shade of a radio tower, 
     gargle the some swamp water while citing from the holy bible in reverse,
     THEN try the stuff on the first row (it's really all you need to do).
+
+    <em>Psssst.... wanna see something more useful in W.I.P?<br> check this one out! &#128540; <a href="https://github.com/JoeyJaySWE/Fake-News-Extra">FAKE NEWS EXTRA!</a></em>
 </p>
 
 <h2>Code Review and Testers</h2>
@@ -111,9 +113,6 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 None that I know off, as of <time>30-10-2020, 18:15</time>
 <p>
 
-
-
-<em>Psssst.... wanna see something more useful in W.I.P?<br> check this one out! &#128540; <a href="https://github.com/JoeyJaySWE/Fake-News-Extra">FAKE NEWS EXTRA!</a></em>
 
 <img src="http://nya.jjd.joeyjaydigital.com/wp-content/uploads/2018/09/Joey-Jay-digital.svg">
 </p>
