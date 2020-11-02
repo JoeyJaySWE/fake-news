@@ -67,7 +67,12 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 
 <h2>Install instructions</h2>
 <p>
-    Clone the file down and that's it really. <br>
+    <ul>
+        <li>Clone the file down</li>
+        <li>Run the command "php -S localhost:8000" from the root folder</li>
+        <li>if command fails, you may need to find a CDN for your OS to download and install it</li>
+    </ul>
+     <br>
     Buuuuut if you really wanna have more fun, try grabing the skin of a long dead cat,
     climb the highest mmountain growing in the shade of a radio tower, 
     gargle the some swamp water while citing from the holy bible in reverse,
