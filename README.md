@@ -115,8 +115,3 @@ In this repository you get a bunch of fun/scary files to look at (depending on c
 <h2>Known bugs</h2>
 
 None that I know off, as of <time>30-10-2020, 18:15</time>
-<p>
-
-
-<img src="http://nya.jjd.joeyjaydigital.com/wp-content/uploads/2018/09/Joey-Jay-digital.svg">
-</p>
